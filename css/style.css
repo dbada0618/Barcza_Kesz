@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
@@ -72,6 +74,10 @@ body {
           transform: translateX(-50%);
 }
 
+.spancon{
+  color: red;
+}
+
 /*header section*/
 .hero_area {
   min-height: 100vh;
@@ -122,6 +128,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
 }
+
 
 .sub_page .hero_area {
   min-height: auto;
@@ -290,6 +297,15 @@ a:focus {
 .custom_nav-container .navbar-toggler[aria-expanded="true"] {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+nav{
+  text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
@@ -695,7 +711,7 @@ a:focus {
 }
 
 .contact_bg_box {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -715,6 +731,7 @@ a:focus {
 
 .contact_bg_box .img-box {
   width: 100%;
+  height: 100%;
 }
 
 .contact_bg_box .img-box img {
