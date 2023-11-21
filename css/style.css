@@ -617,7 +617,7 @@ a:focus {
 
 /* contact section */
 .contact_section {
-  position: relative;
+  position:unset;
   color: #ffffff;
 }
 
